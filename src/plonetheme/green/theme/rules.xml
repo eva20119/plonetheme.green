@@ -5,6 +5,9 @@
        xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
        xmlns:xi="http://www.w3.org/2001/XInclude">
 
+<xi:include href="backend.xml" />
+<!-- Only theme front end pages -->
+<rules css:if-content="body.frontend#visual-portal-wrapper">
   <theme href="index.html" />
   <notheme css:if-not-content="#visual-portal-wrapper" />
 
@@ -20,12 +23,6 @@
     <!-- Don't use Plone icons, use the theme's -->
     <drop css:content="head link[rel='apple-touch-icon']" />
     <drop css:content="head link[rel='shortcut icon']" />
-    <!-- drop the theme stylesheets -->
-    <drop theme="/html/head/link[rel='stylesheet']" />
-    <!-- CSS -->
-    <after css:theme-children="head" css:content="head link" />
-    <!-- Script -->
-    <after css:theme-children="head" css:content="head script" />
   </rules>
 
   <!-- Copy over the id/class attributes on the body tag. This is important for per-section styling -->
@@ -48,19 +45,11 @@
     </xsl:variable>
 
     <div class="{$central}">
-      <!-- <p class="pull-right visible-xs">
-        <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
-      </p> -->
-      <div class="row">
-        <div class="col-xs-12 col-sm-12">
-          <xsl:apply-templates css:select="#content" />
+        <div class="row">
+          <div class="col-xs-12 col-sm-12">
+            <xsl:copy-of css:select="#content-core" />
+          </div>
         </div>
-      </div>
-      <footer class="row">
-        <div class="col-xs-12 col-sm-12">
-          <xsl:copy-of css:select="#viewlet-below-content" />
-        </div>
-      </footer>
     </div>
   </replace>
 
@@ -99,4 +88,23 @@
   <replace css:theme="#portal-toolbar" css:content-children="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated" />
   <replace css:theme="#anonymous-actions" css:content-children="#portal-personaltools-wrapper" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous" />
 
+  <!--edit zone-->
+  <drop css:content="#edit-zone" />
+  <!--path_bar-->
+  <replace css:content="#path_bar" css:theme=".breadcrumb-area.mb-70" css:if-not-content=".portaltype-cover"/>
+  <!--banner-->
+  <replace css:content="#cover_banner" css:theme=".breadcrumb-area.mb-70" css:if-content=".portaltype-cover"/>
+
+  <!--nav-->
+  <replace css:content=".main-menu" css:theme=".main-menu" />
+  <!--logo-->
+  <replace css:content="#portal-logo" css:theme=".navbar-brand.page-scroll" />
+  <!--cover_ad-->
+  <after css:content="#cover_ad" css:theme=".breadcrumb-area.mb-70" />
+  <!--cover_triple-->
+  <after css:content="#cover_triple" css:theme=".breadcrumb-area.mb-70" />
+
 </rules>
+</rules>
+
+

@@ -1,0 +1,668 @@
+<div class="pos_new_product pt-50" id='cover_triple'>
+<style>
+.pos_new_product .tab-menu ul li {
+    display: inline-block;
+}
+.pos_new_product .tab-menu ul li a {
+    color: #9c9c9c;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 30px;
+    padding: 15px 30px;
+    position: relative;
+    text-transform: uppercase;
+    transition: .3s;
+    text-decoration: none;
+}
+.pos_new_product .tab-menu ul li.active a, .pos_new_product .tab-menu ul li a:hover {
+    color: #222;
+}
+.pos_new_product .tab-menu ul li a:before{
+	background: #76b900 none repeat scroll 0 0;
+	bottom: 0;
+	content: "";
+	height: 2px;
+	left: 50%;
+	margin-left: -45px;
+	position: absolute;
+	width: 90px;
+	transition:.3s;
+	opacity:0;
+}
+.pos_new_product .tab-menu ul li a:after{
+	background: #76b900  none repeat scroll 0 0;
+	bottom: -5px;
+	content: "";
+	height: 2px;
+	left: 50%;
+	margin-left: -30px;
+	position: absolute;
+	width: 60px;
+	transition:.3s;
+	opacity:0;
+}
+.pos_new_product .tab-menu ul li.active a:before,.pos_new_product .tab-menu ul li a:hover:before{
+	opacity:1;
+}
+</style>
+
+   <div class="container">
+    <div class="row">
+     <div class="col-lg-12">
+      <!-- tab-menu-start -->
+      <div class="tab-menu mb-40 text-center ">
+       <ul>
+        <li class="active"><a href="#products" data-toggle="tab">New products </a></li>
+        <li><a href="#OnSale"  data-toggle="tab">OnSale</a></li>
+        <li><a href="#Bestseller" data-toggle="tab">Bestseller</a></li>
+       </ul>
+      </div>
+      <!-- tab-menu-end -->
+     </div>
+    </div>
+    <!-- tab-area-start -->
+    <div class="tab-content">
+     <div class="tab-pane active" id="products">
+      <div class="row"> 
+       <div class="product-active">
+        <!-- single-product-start -->
+        <div class="single-product">
+         <div class="product-img">
+          <a href="#">
+           <img src="++theme++green/img/product/64.jpg" alt="product" class="first" />
+           <img src="++theme++green/img/product/65.jpg" alt="product" class="second" />
+          </a>
+         </div>
+         <div class="product-content">
+          <h3><a href="#">Printed Summer Dress</a></h3>
+          <div class="product-rating mb-10">
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+          </div>
+          <div class="product-price">
+           <ul>
+            <li class="new-price">36,78 €</li>
+           </ul>
+          </div>
+          <div class="add-to-links mt-15">
+           <ul>
+            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+            <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+            <li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <!-- single-product-end -->
+        <!-- single-product-start -->
+        <div class="single-product">
+         <div class="product-img">
+          <a href="#">
+           <img src="++theme++green/img/product/66.jpg" alt="product" class="first" />
+           <img src="++theme++green/img/product/67.jpg" alt="product" class="second" />
+          </a>
+         </div>
+         <div class="product-content">
+          <h3><a href="#">Printed Chiffon Dress</a></h3>
+          <div class="product-rating mb-10 color">
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+          </div>
+          <div class="product-price">
+           <ul>
+            <li class="new-price">24,78 €</li>
+           </ul>
+          </div>
+          <div class="add-to-links mt-15">
+           <ul>
+            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+            <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+            <li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <!-- single-product-end -->
+        <!-- single-product-start -->
+        <div class="single-product">
+         <div class="product-img">
+          <a href="#">
+           <img src="++theme++green/img/product/68.jpg" alt="product" class="first" />
+           <img src="++theme++green/img/product/69.jpg" alt="product" class="second" />
+          </a>
+         </div>
+         <div class="product-content">
+          <h3><a href="#">Printed Summer Dress</a></h3>
+          <div class="product-rating mb-10">
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+          </div>
+          <div class="product-price">
+           <ul>
+            <li class="new-price sale">34,78 €</li>
+            <li class="old-price">36,61 €</li>
+           </ul>
+          </div>
+          <div class="add-to-links mt-15">
+           <ul>
+            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+            <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+            <li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <!-- single-product-end -->
+        <!-- single-product-start -->
+        <div class="single-product">
+         <div class="product-img">
+          <a href="#">
+           <img src="++theme++green/img/product/70.jpg" alt="product" class="first" />
+           <img src="++theme++green/img/product/71.jpg" alt="product" class="second" />
+          </a>
+         </div>
+         <div class="product-content">
+          <h3><a href="#">Printed Dress</a></h3>
+          <div class="product-rating mb-10">
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+          </div>
+          <div class="product-price">
+           <ul>
+            <li class="new-price">61,78 €</li>
+           </ul>
+          </div>
+          <div class="add-to-links mt-15">
+           <ul>
+            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+            <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+            <li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <!-- single-product-end -->
+        <!-- single-product-start -->
+        <div class="single-product">
+         <div class="product-img">
+          <a href="#">
+           <img src="++theme++green/img/product/72.jpg" alt="product" class="first" />
+           <img src="++theme++green/img/product/73.jpg" alt="product" class="second" />
+          </a>
+         </div>
+         <div class="product-content">
+          <h3><a href="#">Printed Dress</a></h3>
+          <div class="product-rating mb-10">
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+          </div>
+          <div class="product-price">
+           <ul>
+            <li class="new-price">31,78 €</li>
+           </ul>
+          </div>
+          <div class="add-to-links mt-15">
+           <ul>
+            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+            <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+            <li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <!-- single-product-end -->
+       </div>
+      </div>
+     </div>
+     <div class="tab-pane fade" id="OnSale">
+      <div class="row"> 
+       <div class="product-active">
+        <!-- single-product-start -->
+        <div class="single-product">
+         <div class="product-img">
+          <a href="#">
+           <img src="++theme++green/img/product/74.jpg" alt="product" class="first" />
+           <img src="++theme++green/img/product/75.jpg" alt="product" class="second" />
+          </a>
+         </div>
+         <div class="product-content">
+          <h3><a href="#">Printed Summer Dress</a></h3>
+          <div class="product-rating mb-10">
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+          </div>
+          <div class="product-price">
+           <ul>
+            <li class="new-price">36,78 €</li>
+           </ul>
+          </div>
+          <div class="add-to-links mt-15">
+           <ul>
+            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+            <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+            <li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <!-- single-product-end -->
+        <!-- single-product-start -->
+        <div class="single-product">
+         <div class="product-img">
+          <a href="#">
+           <img src="++theme++green/img/product/76.jpg" alt="product" class="first" />
+           <img src="++theme++green/img/product/77.jpg" alt="product" class="second" />
+          </a>
+         </div>
+         <div class="product-content">
+          <h3><a href="#">Printed Chiffon Dress</a></h3>
+          <div class="product-rating mb-10 color">
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+          </div>
+          <div class="product-price">
+           <ul>
+            <li class="new-price">24,78 €</li>
+           </ul>
+          </div>
+          <div class="add-to-links mt-15">
+           <ul>
+            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+            <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+            <li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <!-- single-product-end -->
+        <!-- single-product-start -->
+        <div class="single-product">
+         <div class="product-img">
+          <a href="#">
+           <img src="++theme++green/img/product/77.jpg" alt="product" class="first" />
+           <img src="++theme++green/img/product/76.jpg" alt="product" class="second" />
+          </a>
+         </div>
+         <div class="product-content">
+          <h3><a href="#">Printed Summer Dress</a></h3>
+          <div class="product-rating mb-10">
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+          </div>
+          <div class="product-price">
+           <ul>
+            <li class="new-price sale">34,78 €</li>
+            <li class="old-price">36,61 €</li>
+           </ul>
+          </div>
+          <div class="add-to-links mt-15">
+           <ul>
+            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+            <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+            <li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <!-- single-product-end -->
+        <!-- single-product-start -->
+        <div class="single-product">
+         <div class="product-img">
+          <a href="#">
+           <img src="++theme++green/img/product/71.jpg" alt="product" class="first" />
+           <img src="++theme++green/img/product/78.jpg" alt="product" class="second" />
+          </a>
+         </div>
+         <div class="product-content">
+          <h3><a href="#">Printed Dress</a></h3>
+          <div class="product-rating mb-10">
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+          </div>
+          <div class="product-price">
+           <ul>
+            <li class="new-price">61,78 €</li>
+           </ul>
+          </div>
+          <div class="add-to-links mt-15">
+           <ul>
+            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+            <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+            <li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <!-- single-product-end -->
+        <!-- single-product-start -->
+        <div class="single-product">
+         <div class="product-img">
+          <a href="#">
+           <img src="++theme++green/img/product/72.jpg" alt="product" class="first" />
+           <img src="++theme++green/img/product/73.jpg" alt="product" class="second" />
+          </a>
+         </div>
+         <div class="product-content">
+          <h3><a href="#">Printed Dress</a></h3>
+          <div class="product-rating mb-10">
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+          </div>
+          <div class="product-price">
+           <ul>
+            <li class="new-price">31,78 €</li>
+           </ul>
+          </div>
+          <div class="add-to-links mt-15">
+           <ul>
+            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+            <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+            <li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <!-- single-product-end -->
+       </div>
+      </div>
+     </div>
+     <div class="tab-pane fade" id="Bestseller">
+      <div class="row"> 
+       <div class="product-active">
+        <!-- single-product-start -->
+        <div class="single-product">
+         <div class="product-img">
+          <a href="#">
+           <img src="++theme++green/img/product/72.jpg" alt="product" class="first" />
+           <img src="++theme++green/img/product/73.jpg" alt="product" class="second" />
+          </a>
+         </div>
+         <div class="product-content">
+          <h3><a href="#">Printed Summer Dress</a></h3>
+          <div class="product-rating mb-10">
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+          </div>
+          <div class="product-price">
+           <ul>
+            <li class="new-price">36,78 €</li>
+           </ul>
+          </div>
+          <div class="add-to-links mt-15">
+           <ul>
+            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+            <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+            <li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <!-- single-product-end -->
+        <!-- single-product-start -->
+        <div class="single-product">
+         <div class="product-img">
+          <a href="#">
+           <img src="++theme++green/img/product/74.jpg" alt="product" class="first" />
+           <img src="++theme++green/img/product/75.jpg" alt="product" class="second" />
+          </a>
+         </div>
+         <div class="product-content">
+          <h3><a href="#">Printed Chiffon Dress</a></h3>
+          <div class="product-rating mb-10 color">
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+          </div>
+          <div class="product-price">
+           <ul>
+            <li class="new-price">24,78 €</li>
+           </ul>
+          </div>
+          <div class="add-to-links mt-15">
+           <ul>
+            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+            <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+            <li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <!-- single-product-end -->
+        <!-- single-product-start -->
+        <div class="single-product">
+         <div class="product-img">
+          <a href="#">
+           <img src="++theme++green/img/product/68.jpg" alt="product" class="first" />
+           <img src="++theme++green/img/product/69.jpg" alt="product" class="second" />
+          </a>
+         </div>
+         <div class="product-content">
+          <h3><a href="#">Printed Summer Dress</a></h3>
+          <div class="product-rating mb-10">
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+          </div>
+          <div class="product-price">
+           <ul>
+            <li class="new-price sale">34,78 €</li>
+            <li class="old-price">36,61 €</li>
+           </ul>
+          </div>
+          <div class="add-to-links mt-15">
+           <ul>
+            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+            <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+            <li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <!-- single-product-end -->
+        <!-- single-product-start -->
+        <div class="single-product">
+         <div class="product-img">
+          <a href="#">
+           <img src="++theme++green/img/product/70.jpg" alt="product" class="first" />
+           <img src="++theme++green/img/product/71.jpg" alt="product" class="second" />
+          </a>
+         </div>
+         <div class="product-content">
+          <h3><a href="#">Printed Dress</a></h3>
+          <div class="product-rating mb-10">
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+          </div>
+          <div class="product-price">
+           <ul>
+            <li class="new-price">61,78 €</li>
+           </ul>
+          </div>
+          <div class="add-to-links mt-15">
+           <ul>
+            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+            <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+            <li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <!-- single-product-end -->
+        <!-- single-product-start -->
+        <div class="single-product">
+         <div class="product-img">
+          <a href="#">
+           <img src="++theme++green/img/product/64.jpg" alt="product" class="first" />
+           <img src="++theme++green/img/product/65.jpg" alt="product" class="second" />
+          </a>
+         </div>
+         <div class="product-content">
+          <h3><a href="#">Printed Dress</a></h3>
+          <div class="product-rating mb-10">
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+          </div>
+          <div class="product-price">
+           <ul>
+            <li class="new-price">31,78 €</li>
+           </ul>
+          </div>
+          <div class="add-to-links mt-15">
+           <ul>
+            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+            <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+            <li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
+           </ul>
+          </div>
+         </div>
+        </div>
+        <!-- single-product-end -->
+       </div>
+      </div>
+     </div>
+    </div>
+    <!-- tab-area-end -->
+   </div>
+  </div>
+  <!-- pos_new_product-area-end -->
+  <!-- special_products-area-start -->
+  <div class="special_products-area">
+   <div class="container">
+    <div class="row">
+     <div class="product-active-7">
+      <div class="col-lg-12">
+       <div class="single-special-product">
+        <div class="special-product-img">
+         <a href="#"><img src="++theme++green/img/product/71.jpg" alt="product" /></a>
+        </div>
+        <div class="special-product-content">
+         <div class="timer-3 timer-2">
+          <div data-countdown="2019/12/15"></div>
+         </div>
+         <div class="special-product-text">
+          <h3><a href="#">Printed Summer Dress</a></h3>
+          <div class="product-rating mb-10">
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+          </div>
+          <div class="product-price">
+           <ul>
+            <li class="new-price">36,78 €</li>
+           </ul>
+          </div>
+          <p> Long printed dress with thin adjustable straps. V-neckline and wiring under the bust with ruffles at the bottom of the dress.</p>
+          <div class="add-to-links mt-15">
+           <ul>
+            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+            <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+            <li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
+           </ul>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-lg-12">
+       <div class="single-special-product">
+        <div class="special-product-img">
+         <a href="#"><img src="++theme++green/img/product/73.jpg" alt="product" /></a>
+        </div>
+        <div class="special-product-content">
+         <div class="timer-3 timer-2">
+          <div data-countdown="2019/12/15"></div>
+         </div>
+         <div class="special-product-text">
+          <h3><a href="#">Printed Summer Dress</a></h3>
+          <div class="product-rating mb-10">
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+           <a href="#"><i class="fa fa-star"></i></a>
+          </div>
+          <div class="product-price">
+           <ul>
+            <li class="new-price">36,78 €</li>
+           </ul>
+          </div>
+          <p> Long printed dress with thin adjustable straps. V-neckline and wiring under the bust with ruffles at the bottom of the dress.</p>
+          <div class="add-to-links mt-15">
+           <ul>
+            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+            <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+            <li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
+           </ul>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
