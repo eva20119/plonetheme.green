@@ -1,0 +1,391 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:metal="http://xml.zope.org/namespaces/metal"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    xmlns:v-on="http://vuejs.org"
+    lang="en"
+    metal:use-macro="context/main_template/macros/master"
+    i18n:domain="gct.content">
+<body>
+<metal:content-core fill-slot="content-core">
+<metal:content-core define-macro="content-core"
+                    tal:define="toc context/table_of_contents|nothing;">
+
+  <div class="product-details-area">
+   <div class="container">
+    <div class="row">
+     <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+      <div class="flexslider">
+       <ul class="slides">
+        <li data-thumb="${python: view.context.absolute_url() + '/@@images/innerCover1'}">
+          <img src="${python: view.context.absolute_url() + '/@@images/innerCover1'}" />
+        </li>
+        <li data-thumb="${python: view.context.absolute_url() + '/@@images/innerCover2'}">
+          <img src="${python: view.context.absolute_url() + '/@@images/innerCover2'}" />
+        </li>
+        <li data-thumb="${python: view.context.absolute_url() + '/@@images/innerCover3'}">
+          <img src="${python: view.context.absolute_url() + '/@@images/innerCover3'}" />
+        </li>
+        <li data-thumb="${python: view.context.absolute_url() + '/@@images/innerCover4'}">
+          <img src="${python: view.context.absolute_url() + '/@@images/innerCover4'}" />
+        </li>
+       </ul>
+      </div>
+     </div>
+     <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+      <div class="product-info-main">
+       <div class="page-title">
+        <h1>${context/title}</h1>
+       </div>
+       <div class="comments_advices">
+        <a href="#">Write a review </a>
+       </div>
+       <div class="product_reference">
+        <p>Reference:<span>demo_13</span></p>
+       </div>
+       <div class="product_condition">
+        <p>Condition: <span>New product</span></p>
+       </div>
+       <div class="product-info-price">
+        <div class="price-final">
+          <tal:condition condition="context/salePrice">
+            <span class="price" style='color:red'> NT${context/salePrice}</span> <del class="price old-price">${context/price}</del>
+         </tal:condition>
+         <tal:condition condition="not: context/salePrice">
+            <span class="price">NT ${context/price}</span>
+         </tal:condition>
+
+        </div>
+       </div>
+       <div class="short_description_block">
+       </div>
+       <div class="product-add-form">
+        <form action="#">
+         <div class="quality-button">
+          <label>Qty</label>
+          <input class="qty" type="number" value="1">
+         </div>
+        </form>
+       </div>
+       <div class="box-cart-bottom">
+        <div class="add_to_cart">
+         <a href="#">Add to cart</a>
+        </div>
+        <div class="add-to-links-2">
+         <ul>
+          <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+          <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+          <li><a href="#" data-toggle="modal" data-target="#mymodal"><i class="fa fa-eye"></i></a></li>
+         </ul>
+        </div>
+       </div>
+       <div class="field-limiter-2">
+        <div class="label-title-2">
+         <span>Size</span>
+        </div>
+        <div class="control">
+         <!-- chosen-start -->
+         <select data-placeholder="Default Sorting" style="width:50px;" class="chosen-select-2" tabindex="1">
+           <option value="Sorting">s</option>
+           <option value="popularity">l</option>
+           <option value="rating">k</option>
+         </select>
+        </div>
+       </div>
+       <div class="QuantityAvailable">
+        <span>299 Items</span>
+        <a href="#">In stock</a>
+       </div>
+       <div class="socialsharing_product">
+        <span>share</span>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-google-plus"></i></a>
+        <a href="#"><i class="fa fa-pinterest-p"></i></a>
+       </div>
+      </div>
+     </div>
+    </div> 
+   </div>
+  </div>
+  <!-- product-details-area-end -->
+  <!-- more-info-area-start -->
+  <div class="more-info-area pt-50">
+   <div class="container">
+    <div class="row">
+     <div class="col-lg-12">
+      <!-- tab-menu-start -->
+      <div class="tab-menu mb-40 text-center ">
+       <ul>
+        <li class="active"><a href="#More" data-toggle="tab">More info </a></li>
+        <li><a href="#Data"  data-toggle="tab">Data sheet</a></li>
+        <li><a href="#Reviews" data-toggle="tab">Reviews</a></li>
+       </ul>
+      </div>
+      <!-- tab-menu-end -->
+     </div>
+    </div>
+    <!-- tab-area-start -->
+    <div class="tab-content">
+     <div class="tab-pane active" id="More">
+      <div class="row">
+       <div class="col-lg-12">
+        <div class="rate">
+         <p>Fashion has been creating well-designed collections since 2010. The brand offers feminine designs delivering stylish separates and statement dresses which have since evolved into a full ready-to-wear collection in which every item is a vital part of a woman's wardrobe. The result? Cool, easy, chic looks with youthful elegance and unmistakable signature style. All the beautiful pieces are made in Italy and manufactured with the greatest attention. Now Fashion extends to a range of accessories including shoes, hats, belts and more!</p>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="tab-pane fade" id="Data">
+      <div class="row">
+       <div class="col-lg-12">
+        <div class="page-product-box">
+         <table class="table-data-sheet">
+          <tbody>
+           <tr class="odd">
+            <td>Compositions</td>
+            <td>Polyester</td>
+           </tr>
+           <tr class="even">
+            <td>Styles</td>
+            <td>Girly</td>
+           </tr>
+           <tr class="odd">
+            <td>Properties</td>
+            <td>Midi Dress</td>
+           </tr>
+          </tbody>
+         </table>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="tab-pane fade" id="Reviews">
+      <div class="row">
+       <div class="col-lg-12">
+        <div class="review-title">
+         <a>Be the first to write your review!</a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <!-- tab-area-end -->
+   </div>
+  </div>
+  <!-- more-info-area-end -->
+  <!-- pos_new_product-area-start -->
+  <div class="pos_new_product ptb-80">
+   <div class="container">
+    <div class="row">
+     <div class="col-lg-12">
+      <div class="section-title mb-30">
+       <h2><span>0</span>ther products in the same category: </h2>
+      </div>
+     </div>
+    </div> 
+    <div class="product-active-3">
+     <!-- single-product-start -->
+     <div class="single-product">
+      <div class="product-img">
+       <a href="#">
+        <img src="img/product/3.jpg" alt="product" class="first" />
+        <img src="img/product/4.jpg" alt="product" class="second" />
+       </a>
+      </div>
+      <div class="product-content">
+       <h3><a href="#">Printed Summer Dress</a></h3>
+       <div class="product-rating mb-10">
+        <a href="#"><i class="fa fa-star"></i></a>
+        <a href="#"><i class="fa fa-star"></i></a>
+        <a href="#"><i class="fa fa-star"></i></a>
+        <a href="#"><i class="fa fa-star"></i></a>
+        <a href="#"><i class="fa fa-star"></i></a>
+       </div>
+       <div class="product-price">
+        <ul>
+         <li class="new-price">36,78 €</li>
+        </ul>
+       </div>
+       <div class="add-to-links mt-15">
+        <ul>
+         <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+         <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+         <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <!-- single-product-end -->
+     <!-- single-product-start -->
+     <div class="single-product">
+      <div class="product-img">
+       <a href="#">
+        <img src="img/product/1.jpg" alt="product" class="first" />
+        <img src="img/product/2.jpg" alt="product" class="second" />
+       </a>
+      </div>
+      <div class="product-content">
+       <h3><a href="#">Printed Chiffon Dress</a></h3>
+       <div class="product-rating mb-10 color">
+        <a href="#"><i class="fa fa-star"></i></a>
+        <a href="#"><i class="fa fa-star"></i></a>
+        <a href="#"><i class="fa fa-star"></i></a>
+        <a href="#"><i class="fa fa-star"></i></a>
+        <a href="#"><i class="fa fa-star"></i></a>
+       </div>
+       <div class="product-price">
+        <ul>
+         <li class="new-price">24,78 €</li>
+        </ul>
+       </div>
+       <div class="add-to-links mt-15">
+        <ul>
+         <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+         <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+         <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <!-- single-product-end -->
+     <!-- single-product-start -->
+     <div class="single-product">
+      <div class="product-img">
+       <a href="#">
+        <img src="img/product/5.jpg" alt="product" class="first" />
+        <img src="img/product/6.jpg" alt="product" class="second" />
+       </a>
+      </div>
+      <div class="product-content">
+       <h3><a href="#">Printed Summer Dress</a></h3>
+       <div class="product-rating mb-10">
+        <a href="#"><i class="fa fa-star"></i></a>
+        <a href="#"><i class="fa fa-star"></i></a>
+        <a href="#"><i class="fa fa-star"></i></a>
+        <a href="#"><i class="fa fa-star"></i></a>
+        <a href="#"><i class="fa fa-star"></i></a>
+       </div>
+       <div class="product-price">
+        <ul>
+         <li class="new-price sale">34,78 €</li>
+         <li class="old-price">36,61 €</li>
+        </ul>
+       </div>
+       <div class="add-to-links mt-15">
+        <ul>
+         <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+         <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+         <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <!-- single-product-end -->
+     <!-- single-product-start -->
+     <div class="single-product">
+      <div class="product-img">
+       <a href="#">
+        <img src="img/product/7.jpg" alt="product" class="first" />
+        <img src="img/product/8.jpg" alt="product" class="second" />
+       </a>
+      </div>
+      <div class="product-content">
+       <h3><a href="#">Printed Dress</a></h3>
+       <div class="product-rating mb-10">
+        <a href="#"><i class="fa fa-star"></i></a>
+        <a href="#"><i class="fa fa-star"></i></a>
+        <a href="#"><i class="fa fa-star"></i></a>
+        <a href="#"><i class="fa fa-star"></i></a>
+        <a href="#"><i class="fa fa-star"></i></a>
+       </div>
+       <div class="product-price">
+        <ul>
+         <li class="new-price">61,78 €</li>
+        </ul>
+       </div>
+       <div class="add-to-links mt-15">
+        <ul>
+         <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+         <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+         <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <!-- single-product-end -->
+     <!-- single-product-start -->
+     <div class="single-product">
+      <div class="product-img">
+       <a href="#">
+        <img src="img/product/9.jpg" alt="product" class="first" />
+        <img src="img/product/10.jpg" alt="product" class="second" />
+       </a>
+      </div>
+      <div class="product-content">
+       <h3><a href="#">Printed Dress</a></h3>
+       <div class="product-rating mb-10">
+        <a href="#"><i class="fa fa-star"></i></a>
+        <a href="#"><i class="fa fa-star"></i></a>
+        <a href="#"><i class="fa fa-star"></i></a>
+        <a href="#"><i class="fa fa-star"></i></a>
+        <a href="#"><i class="fa fa-star"></i></a>
+       </div>
+       <div class="product-price">
+        <ul>
+         <li class="new-price">31,78 €</li>
+        </ul>
+       </div>
+       <div class="add-to-links mt-15">
+        <ul>
+         <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+         <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+         <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <!-- single-product-end -->
+     <!-- single-product-start -->
+     <div class="single-product">
+      <div class="product-img">
+       <a href="#">
+        <img src="img/product/13.jpg" alt="product" class="first" />
+        <img src="img/product/14.jpg" alt="product" class="second" />
+       </a>
+      </div>
+      <div class="product-content">
+       <h3><a href="#">Blouse</a></h3>
+       <div class="product-rating mb-10">
+        <a href="#"><i class="fa fa-star"></i></a>
+        <a href="#"><i class="fa fa-star"></i></a>
+        <a href="#"><i class="fa fa-star"></i></a>
+        <a href="#"><i class="fa fa-star"></i></a>
+        <a href="#"><i class="fa fa-star"></i></a>
+       </div>
+       <div class="product-price">
+        <ul>
+         <li class="new-price">32,78 €</li>
+        </ul>
+       </div>
+       <div class="add-to-links mt-15">
+        <ul>
+         <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+         <li><a href="#"><i class="fa fa-refresh"></i></a></li>
+         <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <!-- single-product-end -->
+    </div>
+   </div>
+  </div>
+
+</metal:content-core>
+</metal:content-core>
+
+</body>
+</html>
+
+
